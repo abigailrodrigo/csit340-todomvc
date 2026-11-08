@@ -58,11 +58,11 @@ function Todos() {
                 className="group relative flex items-center border-b border-[#ededed] text-2xl"
               >
                 <input
-                  type="checkbox"
-                  checked={todo.completed}
-                  readOnly
-                  className="ml-[15px] size-[30px] shrink-0 cursor-pointer accent-[#59a193]"
-                />
+                type="checkbox"
+                checked={todo.completed}
+                onChange={() => handleToggle(todo.id)}
+                className="ml-[15px] size-[30px] shrink-0 cursor-pointer accent-[#59a193]"
+              />
                 <span
                   className={
                     todo.completed
